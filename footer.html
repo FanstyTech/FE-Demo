@@ -26,6 +26,7 @@
 
 <!-- one  -->
 <div class="comcode1">
+    <script src="https://kit.fontawesome.com/b210bcb075.js" crossorigin="anonymous"></script>
 
              <footer class="dark:bg-[#272839] bg-white my-16 relative  overflow-hidden">
     <div class=" w-[96%] mx-auto pt-36">
@@ -120,7 +121,8 @@
       </div>
     </div>
     <style>
-        .thm-btnn {
+        /* all this for footer1 */
+.thm-btnn {
   background-image: linear-gradient(
     90deg,
     #e41256 0%,
@@ -131,12 +133,35 @@
   height: 4.5rem;
   transition: all 0.4s ease;
 }
+
+/* code to button register */
 .thm-btnn:hover {
   background-position: right center;
 }
 
+/* code to add chair beside li when make hover */
+#beforul ul li a:hover {
+  transform: translateX(20px);
+  color: #ee4c4b;
+}
+#beforul ul li a:hover::before {
+  opacity: 1;
+}
+#beforul ul li a::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-40%) translateX(-20px);
+  opacity: 0;
+  color: #ee4c4b;
+  transition: all 500ms ease;
+}
 
-/* icon  */
+/* This code to add amazing animation to links icon  */
 .ulE li {
   position: relative;
   list-style: none;
@@ -156,63 +181,63 @@
   align-items: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
-  }
-  .ulE li:hover {
-    width: 112px;
-    box-shadow: 0 10px 25px rgb(0 0 0 0);
-    background-position: right top;
-  }
-  .ulE li::before {
-    content: "";
-    inset: 0;
-    border-radius: 60px;
-    opacity: 0;
-    transition: 0.5s;
-  }
-  .ulE li:hover::before {
-    opacity: 1;
-  }
-  .ulE li::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 60px;
-    transition: 0.5s;
-    filter: blur(15px);
-    z-index: -1;
-    opacity: 0;
-  }
-  .ulE li:hover::after {
-    opacity: 0.5;
-  }
-  .ulE li .Icons {
-    color: #fff;
-    transition: 0.5s;
-    transition-delay: 0.25s;
-  }
-  .ulE li:hover .Icons {
-    transform: scale(0);
-    transition-delay: 0s;
-  }
-  .ulE li span {
-    position: absolute;
-  }
-  .ulE li .title {
-    color: white;
-    font-size: 10px;
-    letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    transform: scale(0);
-    transition: 0.5s;
-    transition-delay: 0s;
-  }
-  .ulE li:hover .title {
-    transform: scale(1);
-    transition-delay: 0.25s;
-  }
+}
+.ulE li:hover {
+  width: 112px;
+  box-shadow: 0 10px 25px rgb(0 0 0 0);
+  background-position: right top;
+}
+.ulE li::before {
+  content: "";
+  inset: 0;
+  border-radius: 60px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.ulE li:hover::before {
+  opacity: 1;
+}
+.ulE li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  transition: 0.5s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+}
+.ulE li:hover::after {
+  opacity: 0.5;
+}
+.ulE li .Icons {
+  color: #fff;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+.ulE li:hover .Icons {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.ulE li span {
+  position: absolute;
+}
+.ulE li .title {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.ulE li:hover .title {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
 
     </style>
   </footer>

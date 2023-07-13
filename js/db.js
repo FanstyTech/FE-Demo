@@ -6,6 +6,10 @@ let menudb = [
 
     li: [
       {
+        name: "dashboard",
+        link: "./dashboard.html",
+      },
+      {
         name: "profile",
         link: "./profile.html",
       },
@@ -27,11 +31,15 @@ let menudb = [
       },
       {
         name: "button",
-        link: "./dashborad.html",
+        link: "./button.html",
       },
       {
         name: "login",
         link: "./login.html",
+      },
+      {
+        name: "navbar",
+        link: "./navbar.html",
       },
     ],
   },

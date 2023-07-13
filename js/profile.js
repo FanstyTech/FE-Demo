@@ -50,6 +50,7 @@ function copy1(even){
 
 function writecode(b){
           var children = b.previousElementSibling.previousElementSibling.children;
+       
   
           b.nextElementSibling.firstElementChild.innerHTML = ''
           let str = ''

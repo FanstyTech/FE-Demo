@@ -449,6 +449,17 @@ function hid() {
   document.body.classList.toggle("overflow-y-hidden");
 }
 window.onload = () => {
+  try{
+    let iframall = document.querySelectorAll(".iframall");
+    let obj={};
+    for(let i=0;i<iframall.length;i++){
+      obj[i] = iframall[i].contentDocument.body.children[0].outerHTML;
+    }
+    localStorage.obj1=JSON.stringify(obj)
+  }
+  catch{
+    console.log(1)
+  }
   let menu = document.querySelectorAll(".menu");
   let ul = document.querySelectorAll(".men");
 
